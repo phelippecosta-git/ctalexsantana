@@ -334,3 +334,44 @@
       border: 1px solid rgba(255,255,255,0.1);
     }
 
+    .footer {
+      background: #0a0a0a;
+      text-align: center;
+      padding: 40px 20px;
+      color: #777;
+      font-size: 14px;
+      position: relative;
+    }
+
+    .footer-line {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #ff0000, #ff4d4d);
+      margin: 0 auto 20px auto;
+      border-radius: 10px;
+    }
+
+    .footer-text {
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .footer-dev {
+      font-size: 15px;
+    }
+
+    .brand {
+      color: #ffffff;
+      font-weight: bold;
+      letter-spacing: 1px;
+      position: relative;
+      transition: 0.3s ease;
+    }
+
+    .brand:hover {
+      color: #ff0000;
+      text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+      cursor: pointer;
+    }
+
+
