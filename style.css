@@ -315,3 +315,22 @@
     .btn-instagram img {
       display: block;   /* remove espaçamento estranho da imagem */
     }
+
+    .treinos {
+      position: relative;
+      padding: 100px 20px;
+      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+                  url('img/faixa_braca_faixa_azul.png') center/cover no-repeat;
+      color: white;
+    }
+
+    .treinos h2 {
+      color: #ffffff;
+    }
+
+    .treinos .card {
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
