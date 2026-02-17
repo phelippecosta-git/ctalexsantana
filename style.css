@@ -11,7 +11,7 @@
       line-height: 1.6;
     }
 
-    header {
+    /* header {
       background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1605902711622-cfb43c44367f') center/cover no-repeat;
       height: 100vh;
       display: flex;
@@ -19,7 +19,7 @@
       justify-content: center;
       text-align: center;
       padding: 20px;
-    }
+    } */
 
     header h1 {
       font-size: 3rem;
@@ -204,4 +204,74 @@
       width: 100%;
       border-radius: 20px;
       box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+    }
+
+
+    @media (max-width: 768px) {
+
+      /* HERO */
+      .hero {
+        min-height: auto;
+        padding: 60px 20px;
+      }
+
+      .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+      }
+
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+
+      .hero-text p {
+        font-size: 1rem;
+        max-width: 100%;
+      }
+
+      .hero-image img {
+        max-width: 280px;
+      }
+
+      /* CARDS */
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      /* TABELA */
+      .tabela-horarios {
+        font-size: 14px;
+      }
+
+      .tabela-horarios th,
+      .tabela-horarios td {
+        padding: 10px 6px;
+      }
+
+      /* CTA */
+      .cta {
+        padding: 40px 20px;
+      }
+
+    }
+
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 28px;
+      background: #25D366; /* Verde oficial */
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 50px; /* formato arredondado estilo app */
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+    }
+
+    .btn-whatsapp:hover {
+      background: #1ebe5d;
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
     }
