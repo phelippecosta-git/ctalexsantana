@@ -360,18 +360,38 @@
       font-size: 15px;
     }
 
-    .brand {
-      color: #ffffff;
+    .brand a {
+      color: #cda434;
       font-weight: bold;
       letter-spacing: 1px;
-      position: relative;
-      transition: 0.3s ease;
+      text-decoration: none;
+      transition: all 0.4s ease;
     }
 
-    .brand:hover {
-      color: #ff0000;
-      text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
-      cursor: pointer;
+    /* Efeito glow ao passar o mouse */
+    .brand a:hover {
+      color: #ffd369;
+      text-shadow: 
+        0 0 5px rgba(205,164,52,0.6),
+        0 0 10px rgba(205,164,52,0.6),
+        0 0 20px rgba(205,164,52,0.6),
+        0 0 40px rgba(205,164,52,0.4);
+      animation: glowPulse 1.5s infinite alternate;
+    }
+
+    /* Animação suave pulsando */
+    @keyframes glowPulse {
+      from {
+        text-shadow:
+          0 0 5px rgba(205,164,52,0.6),
+          0 0 10px rgba(205,164,52,0.6);
+      }
+      to {
+        text-shadow:
+          0 0 10px rgba(205,164,52,0.9),
+          0 0 20px rgba(205,164,52,0.9),
+          0 0 40px rgba(205,164,52,0.6);
+      }
     }
 
 
